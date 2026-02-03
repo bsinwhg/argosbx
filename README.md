@@ -13,16 +13,16 @@
 
 #### 2、支持Linux类主流VPS系统（建议最新版系统），SSH脚本支持非root环境运行，几乎无需依赖，无脑一次回车搞定
 
-#### 3、支持各种容器系统，Docker镜像部署，公开镜像库：```ygkkk/argosbx```
+#### 3、支持各种容器系统，Docker镜像部署，公开镜像库：```bsinwhg/argosbx```
 
 #### 4、根据Sing-box与Xray不同内核，可选15种WARP出站组合，更换落地IP为WARP的IP，解锁流媒体
 
 #### 5、所有代理协议都无需域名（除了argo固定隧道、IP端口CDN），支持单个或多个代理协议任意组合并快速重置更换
 【 已支持：AnyTLS、Any-reality、Vless-xhttp-reality-vison-enc、Vless-tcp-reality-vision、Vless-xhttp-vison-enc、Vless-ws-vision-enc、Shadowsocks-2022、Vmess-ws、Socks5、Hysteria2、Tuic、Argo临时/固定隧道支持Vless-ws-vision-enc或Vmess-ws 】
 
-#### 6、建议配合SSH一键脚本命令生成器网页使用：https://yonggekkk.github.io/argosbx/
+#### 6、建议配合SSH一键脚本命令生成器网页使用：https://bsinwhg.github.io/argosbx/
 
-#### 7、如需要多样的功能，推荐使用VPS专用四合一脚本[Sing-box-yg](https://github.com/yonggekkk/sing-box-yg)
+#### 7、如需要多样的功能，推荐使用VPS专用四合一脚本[Sing-box-yg](https://github.com/bsinwhg/sing-box-yg)
 
 #### 8、Argosbx客户端推荐：
 
@@ -86,9 +86,9 @@
 
 ### 脚本以 ```变量名称="变量值"的单个或多个组合 + 主脚本``` 的形式运行
 
-* 默认主脚本curl：```bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)```
+* 默认主脚本curl：```bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)```
 
-* 如报错curl not found 可换用主脚本wget：```bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)```
+* 如报错curl not found 可换用主脚本wget：```bash <(wget -qO- https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)```
 
 * 必选其一的协议端口变量：```vwpt=""```、```vmpt=""```、```vmpt="" argo="vmpt"```、```vwpt="" argo="vwpt"```、```vlpt=""```、```xhpt=""```、```anpt=""```、```arpt=""```、```hypt=""```、```tupt=""```、```sspt=""```、```vxpt=""```、```sopt=""```
 
@@ -100,64 +100,64 @@
 
 * ### 模版1：多个任意协议组合运行
 ```
-sspt="" vlpt="" vmpt="" vwpt="" hypt="" tupt="" xhpt="" vxpt="" anpt="" arpt="" sopt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
+sspt="" vlpt="" vmpt="" vwpt="" hypt="" tupt="" xhpt="" vxpt="" anpt="" arpt="" sopt="" bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)
 ```
 
 * ### 模版2：主流TCP或UDP单个协议运行
 
 Vless-Tcp-Reality-vision协议节点
 ```
-vlpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
+vlpt="" bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)
 ```
 
 Vless-Xhttp-Reality-vision-enc协议节点 (默认开启ENC加密)
 ```
-xhpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
+xhpt="" bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)
 ```
 
 Vless-Xhttp-vision-enc协议节点 (默认开启ENC加密，IDX-Google-VPS容器支持)
 ```
-vxpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
+vxpt="" bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)
 ```
 
 Vless-ws-vision-enc协议节点 (默认开启ENC加密)
 ```
-vwpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
+vwpt="" bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)
 ```
 
 Shadowsocks-2022协议节点
 ```
-sspt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
+sspt="" bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)
 ```
 
 AnyTLS协议节点
 ```
-anpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
+anpt="" bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)
 ```
 
 Any-Reality协议节点
 ```
-arpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
+arpt="" bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)
 ```
 
 Vmess-ws协议节点
 ```
-vmpt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
+vmpt="" bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)
 ```
 
 Socks5协议节点 (配合其他应用内置代理使用，勿做节点直接使用)
 ```
-sopt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
+sopt="" bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)
 ```
 
 Hysteria2协议节点
 ```
-hypt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
+hypt="" bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)
 ```
 
 Tuic协议节点
 ```
-tupt="" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
+tupt="" bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)
 ```
 
 * ### 模版3：开启CDN优选的节点运行
@@ -166,37 +166,37 @@ Argo临时/固定隧道运行优选节点，类似无公网的IDX-Google-VPS容�
 
 Vmess-ws-argo临时隧道CDN优选节点
 ```
-vmpt="" argo="vmpt" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
+vmpt="" argo="vmpt" bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)
 ```
 
 Vless-ws-vision-enc-argo临时隧道CDN优选节点
 ```
-vwpt="" argo="vwpt" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
+vwpt="" argo="vwpt" bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)
 ```
 
 Vmess-ws-argo-argo固定隧道CDN优选节点，必须填写端口(vmpt)、域名(agn)、token(agk)
 ```
-vmpt="CF设置的URL端口" argo="vmpt" agn="解析的CF域名" agk="CF获取的token" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
+vmpt="CF设置的URL端口" argo="vmpt" agn="解析的CF域名" agk="CF获取的token" bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)
 ```
 
 Vless-ws-vision-enc-argo固定隧道CDN优选节点，必须填写端口(vmpt)、域名(agn)、token(agk)
 ```
-vwpt="CF设置的URL端口" argo="vwpt" agn="解析的CF域名" agk="CF获取的token" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
+vwpt="CF设置的URL端口" argo="vwpt" agn="解析的CF域名" agk="CF获取的token" bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)
 ```
 
 Vmess-ws的80系端口、回源端口的CDN优选节点
 ```
-vmpt="80系端口、指定回源端口" cdnym="CF解析IP的域名" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
+vmpt="80系端口、指定回源端口" cdnym="CF解析IP的域名" bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)
 ```
 
 Vless-Xhttp-vision-enc的80系端口、回源端口的CDN优选节点
 ```
-vxpt="80系端口、指定回源端口" cdnym="CF解析IP的域名" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
+vxpt="80系端口、指定回源端口" cdnym="CF解析IP的域名" bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)
 ```
 
 Vless-ws-vision-enc的80系端口、回源端口的CDN优选节点
 ```
-vwpt="80系端口、指定回源端口" cdnym="CF解析IP的域名" bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosbx/main/argosbx.sh)
+vwpt="80系端口、指定回源端口" cdnym="CF解析IP的域名" bash <(curl -Ls https://raw.githubusercontent.com/bsinwhg/argosbx/main/argosbx.sh)
 ```
 
 * #### 如下图：节点IP、端口被封依旧可用！套CDN优选5大方案三步视频教程：
